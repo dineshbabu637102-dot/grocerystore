@@ -1,0 +1,132 @@
+/* Center container horizontally and vertically (optional vertical centering) */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container box styling */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+  text-align: center; /* center text inside container */
+}
+
+/* Products and Cart item alignment */
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+/* Override product item to have contents centered horizontally */
+.product span {
+  flex: 1;
+  text-align: center;
+}
+
+.product input {
+  width: 60px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+/* Buttons centered */
+.button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* For Remove buttons */
+.button[style] {
+  background: #c0392b !important;
+}
+
+/* Login Form styling */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left; /* keep inputs left aligned */
+}
+
+.login-form div {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.login-form .button {
+  width: 100%;
+  text-align: center;
+}
+
+/* Center the welcome and logout message */
+.container > p {
+  margin-bottom: 30px;
+}
+.checkout-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #27ae60;
+  border-radius: 8px;
+  background-color: #eafaf1;
+  text-align: left;
+}
+
+.checkout-section form div {
+  margin-bottom: 15px;
+}
+
+.checkout-section label {
+  font-weight: bold;
+}
+
+.checkout-section input[type="number"],
+.checkout-section select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+.checkout-section p {
+  font-weight: bold;
+}
+
+.checkout-section div > p {
+  margin-bottom: 10px;
+  text-align: center;
+}
